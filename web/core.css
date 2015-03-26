@@ -1,0 +1,29 @@
+html,
+body {
+  font-size: 15px;
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background: #FFFFFF;
+  margin: 0px;
+  padding: 0px;
+  color: #555555;
+  text-rendering: optimizeLegibility;
+  min-width: 320px;
+}
+
+h1 {
+    font-size: 70px!important;
+    color: darkorange!important;
+}
+
+.logo {
+    margin-bottom: -10px;
+}
+
+#header {
+    border-bottom: 3px solid darkorange;
+    background-color: black;
+}

@@ -1,0 +1,6 @@
+vendor/*
+components/*
+
+composer.phar
+composer.lock
+sftp-config.json

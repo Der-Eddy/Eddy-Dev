@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta charset="utf-8">
+		<title>Eddy-Dev - {{ title }}</title>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="./vendor/semantic/ui/dist/semantic.min.css">
+		<link rel="stylesheet" type="text/css" href="./web/core.css">
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+		<script src="./vendor/semantic/ui/dist/semantic.min.js"></script>
+	</head>
+	<body>
+		<div class="ui inverted page grid masthead segment" id="header">
+	    	<div class="column">
+	    		<div class="inverted secondary pointing ui menu">
+	        		<h1 class="ui inverted header">
+	          			<img src="./web/StrichHalb.png" alt="Logo" height=70 class="logo">
+	          			Eddy-Dev
+	        		</h1>
+	      		</div>
+	    	</div>
+	  	</div>
+	  	<div class="ui inverted page grid masthead segment">
+	  	    <div class="ui two wide column">Test</div>
+	        <div class="twelve wide column">
+	        	{% for item in navigation %}
+	    	    <div class="column">
+	    		    <div class="inverted secondary pointing ui menu">
+	        		    <h2 class="ui inverted header">
+	          			{{ item.caption }}
+	        		    </h2>
+	        	    </div>
+	      		</div>
+	      		{% endfor %}
+	    	</div>
+	  	</div>
+	</body>
+</html>

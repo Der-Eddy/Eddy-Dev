@@ -1,0 +1,7 @@
+{
+    "require": {
+        "twig/twig": "~1.0",
+        "semantic/ui": "~1.11.5",
+        "knplabs/github-api": "~1.2"
+    }
+}
