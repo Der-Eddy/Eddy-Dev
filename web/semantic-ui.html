@@ -1,38 +1,143 @@
 <!DOCTYPE html>
-<html> 
-	<head>
-		<meta charset="utf-8">
-		<title>Eddy-Dev - {{ title }}</title>
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="./vendor/semantic/ui/dist/semantic.min.css">
-		<link rel="stylesheet" type="text/css" href="./web/core.css">
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
-		<script src="./vendor/semantic/ui/dist/semantic.min.js"></script>
-	</head>
-	<body>
-		<div class="ui inverted page grid masthead segment" id="header">
-	    	<div class="column">
-	    		<div class="inverted secondary pointing ui menu">
-	        		<h1 class="ui inverted header">
-	          			<img src="./web/StrichHalb.png" alt="Logo" height=70 class="logo">
-	          			Eddy-Dev
-	        		</h1>
-	      		</div>
-	    	</div>
-	  	</div>
-	  	<div class="ui inverted page grid masthead segment">
-	  	    <div class="ui two wide column">Test</div>
-	        <div class="twelve wide column">
-	        	{% for item in navigation %}
-	    	    <div class="column">
-	    		    <div class="inverted secondary pointing ui menu">
-	        		    <h2 class="ui inverted header">
-	          			{{ item.caption }}
-	        		    </h2>
-	        	    </div>
-	      		</div>
-	      		{% endfor %}
-	    	</div>
-	  	</div>
-	</body>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eddy-Dev - {{ title }}</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="./vendor/semantic/ui/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="./web/core.css">
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+  <script src="./vendor/semantic/ui/dist/semantic.min.js"></script>
+  <script src="./web/dropdown.js"></script>
+
+</head>
+<body id="home">
+  <div class="ui inverted masthead segment">
+    <div class="ui page grid">
+      <div class="column">
+        <div class="ui inverted orange menu">
+          <div class="header item">Eddy-Dev</div>
+          <div class="right menu">
+            <div class="ui dropdown link item">
+              Github Projekte
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <a class="item">PHP</a>
+                <a class="item">Python</a>
+                <a class="item">AutoIt</a>
+              </div>
+            </div>
+            <div class="ui dropdown link item">
+              Spiele
+              <i class="dropdown icon"></i>
+              <div class="menu">
+                <a class="item">Phaser Flappy</a>
+                <a class="item">Phaser Jump 'n Run</a>
+                <a class="item">2028 Klon</a>
+              </div>
+            </div>
+            <a class="item">RaspberryPi</a>
+            <a class="item">About</a>
+          </div>
+        </div>
+        <img src="web/StrichHalb.png" class="ui medium image">
+        <div class="ui hidden transition information">
+          <h1 class="ui inverted header">
+            Eddy-Dev
+          </h1>
+          <p>{{ content }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical feature segment">
+    <div class="ui centered page grid">
+      <div class="fourteen wide column">
+        <div class="ui three column center aligned stackable divided grid">
+          <div class="column">
+            <div class="ui icon header">
+              <i class="student icon"></i>
+              Courses
+            </div>
+            <p>Take your kitty to a cat-ducation course and learn how to treat her well.</p>
+            <p>
+              <a class="ui button" href="#">
+                Learn
+              </a>
+            </p>
+          </div>
+          <div class="column">
+            <div class="ui icon header">
+              <i class="code icon"></i>
+              Library
+            </div>
+            <p>Dig through our cat library to found out amazing things you can do with your kitty.</p>
+            <p>
+              <a class="ui blue right labeled icon button" href="#">
+                Research
+                <i class="right chevron icon"></i>
+              </a>
+            </p>
+          </div>
+          <div class="column">
+            <div class="ui icon header">
+              <i class="user icon"></i>
+              Community
+            </div>
+            <p>Get feedback on your cat from a community of loving pet owners on our online bulletin board system.</p>
+            <p>
+              <a class="ui button" href="#">
+                Share
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui inverted footer vertical segment">
+    <div class="ui stackable center aligned page grid">
+      <div class="ten wide column">
+        <div class="ui three column center aligned stackable grid">
+          <div class="column">
+            <h5 class="ui inverted header">Courses</h5>
+            <div class="ui inverted link list">
+              <a class="item">Registration</a>
+              <a class="item">Course Calendar</a>
+              <a class="item">Professors</a>
+            </div>
+          </div>
+          <div class="column">
+            <h5 class="ui inverted header">Library</h5>
+            <div class="ui inverted link list">
+              <a class="item">A-Z</a>
+              <a class="item">Most Popular</a>
+              <a class="item">Recently Changed</a>
+            </div>
+          </div>
+          <div class="column">
+            <h5 class="ui inverted header">Community</h5>
+            <div class="ui inverted link list">
+              <a class="item">BBS</a>
+              <a class="item">Careers</a>
+              <a class="item">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="six wide column">
+        <h5 class="ui inverted header">Impressum</h5>
+        <addr>
+          Eduard Nikoleisen<br>
+          Nürnbergerstraße 14<br>
+          D-93155 Hemau<br>
+        </addr>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

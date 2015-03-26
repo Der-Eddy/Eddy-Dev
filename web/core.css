@@ -1,6 +1,6 @@
 html,
 body {
-  font-size: 15px;
+  font-size: 14px;
   height: 100%;
 }
 
@@ -26,4 +26,58 @@ h1 {
 #header {
     border-bottom: 3px solid darkorange;
     background-color: black;
+}
+
+#home .masthead {
+  background-image: url(./bg.jpg);
+  margin: 0em;
+  padding: 5rem 0rem;
+}
+
+#home .masthead .column {
+  position: relative;
+}
+
+#home .masthead .information {
+  margin: 10em 1em 1em 350px;
+}
+
+#home .masthead .information p {
+  max-width: 600px;
+}
+
+#home .masthead .image {
+  position: absolute;
+  left: 0%;
+  bottom: -30px;
+}
+
+#home .segment h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+#home .vertical.segment {
+  padding: 12rem 0rem;
+}
+
+#home .feature.segment {
+  margin: 0em;
+  padding: 6rem 0rem;
+}
+#home .feature.segment p {
+  min-height: 50px;
+}
+
+#home .selection.list {
+  margin: 0em -0.5em;
+}
+
+#home .logo.row {
+  height: 10rem;
+}
+
+#home .footer.segment {
+  background-color: #000000;
+  padding: 3rem 0rem;
 }

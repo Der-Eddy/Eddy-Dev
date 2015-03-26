@@ -10,17 +10,13 @@ $twig = new Twig_Environment($loader, array(
 switch (htmlspecialchars($_GET["site"])){
 	case "":
 	case "index":
-		echo $twig->render('semantic-ui.html', array('title' => 'test', 'navigation' => array(
-			array("caption" => "Test1", "href" => "index.php"),
-			array("caption" => "Test2", "href" => "index.php"),
-			array("caption" => "Test3", "href" => "index.php")
-		)));
+		echo $twig->render('semantic-ui.html', array('title' => 'Index', "content" => "Diese Webseite dient nicht nur als Präsentation sondern auch als Sammelplatz meiner Projekte."));
 		break;
 	case "about":
-		echo $twig->render("semantic-ui.html", array("title" => "about"));
+		echo $twig->render("semantic-ui.html", array("title" => "about", "content" => "about"));
 		break;	
 	default:
-		echo $twig->render("semantic-ui.html", array("title" => "404"));
+		echo $twig->render("semantic-ui.html", array("title" => "404", "content" => "404\r\nnot found"));
 		break;
 }
 ?>
