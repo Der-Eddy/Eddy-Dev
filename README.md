@@ -14,7 +14,7 @@ Beschränkt auf den wichtigsten Teil welcher direkt im "server" Block steht:
 Installation:
 -------------
 
-Für das Projekt benutze ich den [PHP Composer][https://getcomposer.org/]
+Für das Projekt benutze ich den [PHP Composer](https://getcomposer.org/)
 
 Dieser muss auf den Webspace gebracht werden (siehe Composer Webseite) - also die `composer.phar`
 Anschließend wechselt man zur PHP Konsole und geht in den Pfad in der mein Projekt und die `composer.phar` neben der `composer.json` liegt

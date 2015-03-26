@@ -1,5 +1,6 @@
 vendor/*
 components/*
+cache/*
 
 composer.phar
 composer.lock
