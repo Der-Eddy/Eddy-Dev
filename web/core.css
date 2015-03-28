@@ -32,6 +32,7 @@ h1 {
   background-image: url(./bg.jpg);
   margin: 0em;
   padding: 5rem 0rem;
+  border-bottom: solid darkorange 2px;
 }
 
 #home .masthead .column {
@@ -80,4 +81,5 @@ h1 {
 #home .footer.segment {
   background-color: #000000;
   padding: 3rem 0rem;
+  border-top: solid darkorange 3px;
 }
