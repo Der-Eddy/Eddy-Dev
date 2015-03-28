@@ -18,29 +18,7 @@
     <div class="ui page grid">
       <div class="column">
         <div class="ui inverted orange menu">
-          <div class="header item">Eddy-Dev</div>
-          <div class="right menu">
-            <div class="ui dropdown link item">
-              Github Projekte
-              <i class="dropdown icon"></i>
-              <div class="menu">
-                <a class="item">PHP</a>
-                <a class="item">Python</a>
-                <a class="item">AutoIt</a>
-              </div>
-            </div>
-            <div class="ui dropdown link item">
-              Spiele
-              <i class="dropdown icon"></i>
-              <div class="menu">
-                <a class="item">Phaser Flappy</a>
-                <a class="item">Phaser Jump 'n Run</a>
-                <a class="item">2028 Klon</a>
-              </div>
-            </div>
-            <a class="item">RaspberryPi</a>
-            <a class="item">About</a>
-          </div>
+          {% include 'menu.html' %}
         </div>
         <img src="web/StrichHalb.png" class="ui medium image">
         <div class="ui hidden transition information">
@@ -68,7 +46,7 @@
               <i class="student icon"></i>
               Courses
             </div>
-            <p>Take your kitty to a cat-ducation course and learn how to treat her well.</p>
+    		<p>Take your kittys to a cat-ducation course and learn how to treat her well.</p>
             <p>
               <a class="ui button" href="#">
                 Learn
