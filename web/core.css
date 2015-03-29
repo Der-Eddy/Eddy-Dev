@@ -33,7 +33,7 @@ h1 {
 }
 
 #home .masthead {
-  background: url(./bg.jpg) no-repeat center center fixed;
+  background: url(./bg.min.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
