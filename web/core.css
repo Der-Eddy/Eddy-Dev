@@ -28,10 +28,18 @@ h1 {
     background-color: black;
 }
 
+.ui.header:first-child {
+  margin-top: -1em;
+}
+
 #home .masthead {
-  background-image: url(./bg.jpg);
+  background: url(./bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   margin: 0em;
-  padding: 5rem 0rem;
+  padding: 3rem 0rem;
   border-bottom: solid darkorange 2px;
 }
 
@@ -55,7 +63,7 @@ h1 {
 
 #home .segment h1 {
   font-size: 3em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 #home .vertical.segment {
