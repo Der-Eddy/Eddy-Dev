@@ -7,11 +7,17 @@ $twig = new Twig_Environment($loader, array(
 	'debug' => true,
 ));
 
+$client = new \Github\Client();
+$repositories = $client->api('user')->repositories('Der-Eddy');
+
 switch (htmlspecialchars($_GET["site"])){
 	case "":
 	case "index":
 		echo $twig->render('semantic-ui.html', array('title' => 'Index', "content" => "Diese Webseite dient nicht nur als Präsentation sondern auch als Sammelplatz meiner Projekte."));
 		break;
+    case "test":
+         echo $twig->render('test.html', array('title' => 'Test', "content" => var_dump($repositories)));
+         break;
 	case "about":
 		echo $twig->render("semantic-ui.html", array("title" => "about", "content" => "about"));
 		break;	

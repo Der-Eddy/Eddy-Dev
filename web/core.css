@@ -93,9 +93,5 @@ h1 {
 }
 
 .ui .card {
-  width: 270px!important;
-}
-
-.column {
-  width: 90%;
+  width: 300px!important;
 }
