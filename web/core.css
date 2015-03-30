@@ -33,7 +33,7 @@ h1 {
 }
 
 #home .masthead {
-  background: url(./bg.min.jpg) no-repeat center center fixed;
+  background: url(./img/bg.min.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -90,4 +90,12 @@ h1 {
   background-color: #000000;
   padding: 3rem 0rem;
   border-top: solid darkorange 3px;
+}
+
+.ui .card {
+  width: 270px!important;
+}
+
+.column {
+  width: 90%;
 }
