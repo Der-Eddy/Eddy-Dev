@@ -6,7 +6,7 @@ body {
 
 body {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  background: #FFFFFF;
+  background: #1B1C1D;
   margin: 0px;
   padding: 0px;
   color: #555555;
@@ -94,4 +94,8 @@ h1 {
 
 .ui .card {
   width: 300px!important;
+}
+
+#right {
+  float: right;
 }
