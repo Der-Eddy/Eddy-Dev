@@ -16,10 +16,10 @@ switch (htmlspecialchars($_GET["site"])){
 		echo $twig->render('semantic-ui.html', array('title' => 'Index', "content" => "Diese Webseite dient nicht nur als Präsentation sondern auch als Sammelplatz meiner Projekte."));
 		break;
     case "test":
-         echo $twig->render('test.html', array('title' => 'Test', "content" => var_dump($repositories)));
+         echo $twig->render('test.html', array('title' => 'Test', "content" => $repositories));
          break;
 	case "about":
-		echo $twig->render("semantic-ui.html", array("title" => "about", "content" => "about"));
+		echo $twig->render("about.html", array("title" => "about"));
 		break;	
 	default:
 		echo $twig->render("semantic-ui.html", array("title" => "404", "content" => "404\r\nnot found"));
